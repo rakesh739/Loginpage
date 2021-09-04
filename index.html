@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style type="text/css">
+    body {
+        background-color: darkorchid;
+    }
+        div{
+            width:500px;
+            height:500px;
+            border:1px solid red;
+            margin:0 auto;
+            padding: 50px;
+            box-sizing: border-box;
+            background-color: rgb(22, 199, 199);
+           
+            
+        }
+        </style>
+</head>
+
+<body>
+    
+    <h1 align="center">Welcome to Login Page</h1>
+    <hr>
+    <div align="center">
+        <h2 align="center">Login</h2>
+        username:<br>
+        <input type="text" name="text" id="username">
+        <br><br>
+        password: <br>
+        <input type="password"name="text" id="password">
+        <br><br>
+        <button onclick="login()">submit</button>
+    </div>
+    <script type ="text/javascript">
+    function login(){
+        var uname=document.getElementById('username'.value);
+        var pass=document.getElementById('password'.value);
+        if(uname=="admin" && pass=="123") {
+            location.assign("C:\Users\admin\Desktop\Login page");
+        } else {
+            window.alert("login failed");
+        }
+    }
+    </script>
+    
+    
+</body>
+</html>
